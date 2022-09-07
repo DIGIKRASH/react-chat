@@ -1,9 +1,13 @@
-import io from "socket.io-client";
+import React from "react";
 
-const socket = io("http://localhost:8080");
+import { Welcome } from "./components";
 
 function App() {
-  return <button>connect</button>;
+  return (
+    <div className="wrapper">
+      <Welcome />
+    </div>
+  );
 }
 
 export default App;
